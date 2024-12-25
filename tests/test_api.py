@@ -23,3 +23,6 @@ def test_create_post():
     response = requests.post(f"{BASE_URL}/posts", json=new_post)
     assert response.status_code == 201
     assert response.json()['title'] == new_post['title']
+
+def test_put():
+    print("Update put here")
